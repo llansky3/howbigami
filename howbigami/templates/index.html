@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+        <title>How big am I?</title>
+    </head>
+    <body>
+        <div>
+            <h1>How big am I?</h1>
+            <p>
+                <h2>You are {{ total_size }} units big!</h2>
+                Below you will also find the size of different items. 
+                For simplicity the figure shows only first {{ n_items }} largest items but the table has all the items.
+                These largest items take {{ filtered_size[1] }}% ({{ filtered_size[0] }} units) of the total.
+            </p>
+            {{ squarify_image | safe}}<br>
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Size</th>
+                </tr>
+                {% for c1, c2, r_class  in items_list %}
+                <tr class="{{ r_class }}">
+                    <td>{{ c1 }}</td>
+                    <td>{{ c2 }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+	</div>
+    </body>
+ </html>

@@ -1,0 +1,4 @@
+matplotlib>=2.2.5
+squarify>=0.4.4
+seaborn>=0.8.1
+Flask>=1.0.4

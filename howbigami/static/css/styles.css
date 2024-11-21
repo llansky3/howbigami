@@ -1,0 +1,96 @@
+
+* 
+{
+  box-sizing: border-box;
+}
+
+html { 
+  background: no-repeat right center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+input[type=submit] 
+{
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover 
+{
+  background-color: #45a049;
+}
+            
+.emptybox 
+{
+  text-align: left;
+  padding: 10px;
+  width: 50%;
+  position: fixed; /* or absolute */
+  top: 5%;
+  left: 25%;              
+}
+            
+.greenbox 
+{
+  text-align: left;
+  border: 3px solid green;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 50px;
+  width: 30%;
+  position: fixed; /* or absolute */
+  top: 10%;
+  left: 65%;
+  font-size: 1.5em;
+  opacity: 0.9; 
+}
+            
+h1 
+{
+  font-size: 3.5em; /* 40px/16=2.5em */
+  font-family: Georgia;
+}
+            
+h2 
+{
+  font-size: 2.5em; /* 40px/16=2.5em */
+  font-family: Georgia;
+}
+            
+input[type=radio] + label span 
+{
+  /* display: none; */
+  font-size: 1.5em; /* 40px/16=1.5em */ 
+  font-family: Georgia;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+th, td {
+  padding: 0.25rem;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+tbody tr:nth-child(odd) {
+  background: #eee;
+}
+
+tr.black td {
+  color: black
+}
+			
+tr.darkgray td {
+  color: rgb(128, 128, 128)
+}
