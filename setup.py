@@ -22,7 +22,7 @@ setup(
     author='Lukas Lansky',
     author_email='lukas.lansky@suse.com',
     url='https://github.com/llansky3/howbigami',
-    license=license,
+    license='Apache License 2.0',
     packages=find_packages(exclude=('tests', 'docs'))
 )
 
