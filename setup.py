@@ -2,6 +2,8 @@
 # python3 setup.py sdist
 # python3 -m twine check dist/*
 # git tag $(cat version.txt)
+# git push origin tag $(cat version.txt)
+# python3 -m twine upload --repository pypi dist/*
 
 from setuptools import setup, find_packages
 
