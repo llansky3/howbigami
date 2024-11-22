@@ -1,5 +1,6 @@
 # To create a distribution relase: 
 # python3 setup.py sdist
+# python3 -m twine check dist/*
 # git tag $(cat version.txt)
 
 from setuptools import setup, find_packages
@@ -23,7 +24,8 @@ setup(
     author_email='lukas.lansky@suse.com',
     url='https://github.com/llansky3/howbigami',
     license='Apache License 2.0',
-    packages=find_packages(exclude=('tests', 'docs'))
+    packages=find_packages(exclude=('tests', 'docs')),
+    include_package_data=True
 )
 
 
