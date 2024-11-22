@@ -86,8 +86,8 @@ def plot(volumes, labels, n, file_format, options):
     if len(volumes) > n:
         othern = len(volumes[n:])
         othersum = int(sum(volumes[n:]))
-        volumes = volumes[0:n-1]
-        labels = labels[0:n-1]
+        volumes = volumes[0:n]
+        labels = labels[0:n]
         volumes.append(othersum)
         if options.b_others:
             labels.append(f'other\n({othern} items)')
@@ -151,8 +151,8 @@ def index_filtered_by_name(item_name):
 def index_filtered(n_items):
     n_items = min(len(app.volumes),int(n_items))
     app.squarify_image = plot(app.volumes, app.labels, n_items, 'png', app.args)
-    r_classes = ['black']*(n_items-1)
-    for i in range(0, len(app.volumes)-n_items+1):
+    r_classes = ['black']*(n_items)
+    for i in range(0, len(app.volumes)-n_items):
         r_classes.append('darkgray')
     items_list = zip(app.labels, app.volumes, r_classes)
     filtered_size = [

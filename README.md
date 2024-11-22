@@ -2,7 +2,8 @@
 
 <h1>Treemap visualization of component sizes</h1>
 It processes the data from stdin and visualizes them in form of a treemap of components.
-The visualization happens via local Flask server and can be then accessed via browser. The input data must be in a format of:
+The visualization happens via local Flask server and can be then accessed via browser
+<br>The input data must be in a format of:
 
 ```text 
 SIZE1 LABEL1
